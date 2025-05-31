@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription scolaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulaire d'inscription scolaire</h2>
+    <form action="#" method="POST">
+        <label for="nom">Nom de l’élève</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom de l’élève</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="sexe">Sexe</label>
+        <select id="sexe" name="sexe" required>
+            <option value="">--Choisir--</option>
+            <option value="Masculin">Masculin</option>
+            <option value="Féminin">Féminin</option>
+        </select>
+
+        <label for="date_naissance">Date de naissance</label>
+        <input type="date" id="date_naissance" name="date_naissance" required>
+
+        <label for="classe">Classe demandée</label>
+        <select id="classe" name="classe" required>
+            <option value="">--Choisir une classe--</option>
+            <option value="1e Primaire">1ère Primaire</option>
+            <option value="2e Primaire">2e Primaire</option>
+            <option value="3e Primaire">3e Primaire</option>
+            <option value="4e Primaire">4e Primaire</option>
+            <option value="5e Primaire">5e Primaire</option>
+            <option value="6e Primaire">6e Primaire</option>
+        </select>
+
+        <label for="adresse">Adresse</label>
+        <textarea id="adresse" name="adresse" rows="3" required></textarea>
+
+        <label for="parent">Nom du parent ou tuteur</label>
+        <input type="text" id="parent" name="parent" required>
+
+        <label for="telephone">Téléphone du parent</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="+243..." required>
+
+        <button type="submit">Envoyer l'inscription</button>
+    </form>
+
+</body>
+</html>
